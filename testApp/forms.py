@@ -2,7 +2,8 @@ from django import forms
 from django.core import validators
 from django.contrib.auth.models import User
 from testApp.models import UserProfileInfo
-# custom validators
+
+# custom validators fro UserForm
 def check_name(value):
     if value[0].lower() != "s":
         raise forms.ValidationError("Letter must  be starts with 'S' ")
