@@ -1,0 +1,10 @@
+table, th, td, thead {
+  border : 1px solid black;
+  color:red;
+  }
+thead{
+  color :black;
+}
+h1{
+  color :red;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends "testApp/base.html" %}
+{% block title %}this is test page{% endblock %}
+    <!-- override the base html form -->
+    {% block body_block %}
+    <!-- to merge the other tempate value into the required page along with the base html -->
+    {% include "testApp/childbase.html" %}
+    {% block childbody_block %}{% endblock %}
+    <h1>this is test page</h1>
+
+    {% endblock %}
+
+
+
+
+  </body>
