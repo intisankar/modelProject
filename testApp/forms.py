@@ -32,7 +32,7 @@ class simpleForm(forms.Form):
         verify_email = total_clean_data['verify_email']
         if email != verify_email:
             raise forms.ValidationError("enter emial correctly!..")
-
+# hi sankar
     # def clean_botcatcher(self):
     #     botcatcher = self.cleaned_data['botcatcher']
     #     if len(botcatcher) > 0:

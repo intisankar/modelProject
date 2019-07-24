@@ -23,7 +23,7 @@ def add_employee():
     t = Employee.objects.get_or_create(ename=random.choice(ename),eno=fake_eno,esal=fake_esal,eaddr=fake_eaddr)[0] #return the tupple and grab the second element
     t.save()
     return t
-    
+
 # how many times inwich it is to be run
 def populate(N=5):
     for entry in range(N):
